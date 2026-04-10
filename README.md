@@ -250,17 +250,6 @@ wandb login
 
 ---
 
-# Results
-
-| Task   | Model           | Primary Metric | Value  |
-| ------ | --------------- | -------------- | ------ |
-| Task 1 | VGG11Classifier | Macro F1       | 0.5723 |
-| Task 2 | VGG11Localizer  | Mean IoU       | -      |
-| Task 3 | VGG11UNet       | Dice Score     | 0.6831 |
-| Task 4 | MultiTaskModel  | Macro F1       | 0.6409 |
-
----
-
 # Key Design Decisions
 
 **Custom Dropout:**
