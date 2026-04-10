@@ -1,20 +1,18 @@
-"""Model package exports for Assignment-2 skeleton.
-
-Import from this package in training/inference scripts to keep paths stable.
-"""
-
-from .layers import CustomDropout
-from .localization import VGG11Localizer
-from .classification import VGG11Classifier
-from .segmentation import VGG11UNet
-from .vgg11 import VGG11Encoder
-from .multitask import MultiTaskPerceptionModel
+from models.layers        import CustomDropout
+from models.vgg11         import VGG11Encoder, VGG11
+from models.classification import VGG11Classifier
+from models.localization  import VGG11Localizer
+from models.segmentation  import VGG11UNet, _dec_block as _dec_block_seg
+from models.multitask     import MultiTaskPerceptionModel, _dec_block
 
 __all__ = [
     "CustomDropout",
-    "VGG11Classifier",
     "VGG11Encoder",
+    "VGG11",
+    "VGG11Classifier",
     "VGG11Localizer",
     "VGG11UNet",
+    "_dec_block_seg",
     "MultiTaskPerceptionModel",
+    "_dec_block",
 ]
